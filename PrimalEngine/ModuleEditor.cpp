@@ -291,17 +291,39 @@ update_status ModuleEditor::DrawEditor()
             ImGui::EndMenu();
         }
 
-
         //CreateAboutModalPopup(showModalAbout);
         CreateAboutWindow(showAboutWindow);
         CreateConsoleWindow(isActiveConsole);
 
         ViewCollapsingHeader();
 
+        ImGui::SameLine(ImGui::GetWindowWidth() / 2);
+        {
+            //PLAY
+            if (ImGui::Button("Play"))
+            {
+
+            }
+
+            ImGui::SameLine();
+
+            //PAUSE
+            if (ImGui::Button("Pause"))
+            {
+
+            }
+
+            ImGui::SameLine();
+
+            //STOP
+            if (ImGui::Button("Stop"))
+            {
+
+            }
+        }
+
         ImGui::EndMainMenuBar();
     }
-
-
 
     if (App->hierarchy->objSelected && isActiveInspector) {
 
