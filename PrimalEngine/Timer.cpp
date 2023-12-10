@@ -8,7 +8,7 @@
 // ---------------------------------------------
 Timer::Timer()
 {
-	Start();
+	
 }
 
 // ---------------------------------------------
@@ -19,10 +19,19 @@ void Timer::Start()
 }
 
 // ---------------------------------------------
+void Timer::Pause()
+{
+	running = false;
+	started_at = SDL_GetTicks();
+	started_at = stopped_at;
+}
+
+// ---------------------------------------------
 void Timer::Stop()
 {
 	running = false;
 	stopped_at = SDL_GetTicks();
+	started_at = stopped_at;
 }
 
 // ---------------------------------------------

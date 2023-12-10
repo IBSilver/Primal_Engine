@@ -16,7 +16,7 @@
 #include "Assimp/include/ai_assert.h"
 #include "Assimp/include/version.h"
 
-ModuleEditor::ModuleEditor(Application* app, bool start_enabled) : Module(app, start_enabled)
+ModuleEditor::ModuleEditor(Application* app, bool start_enabled) : Module(app, start_enabled), frames_time(0U)
 {
     logs = new std::deque<std::string>();
 }
@@ -224,7 +224,6 @@ update_status ModuleEditor::DrawEditor()
                 PrimitivesGeomtriesLibrary::InstanciatePrimitiveGeometry(GeometryType::P_SUZANNE);
             }
 
-
             ImGui::EndMenu();
         }
      
@@ -299,29 +298,29 @@ update_status ModuleEditor::DrawEditor()
 
         ImGui::SameLine(ImGui::GetWindowWidth() / 2);
         {
-            //PLAY
+            //Play
             if (ImGui::Button("Play"))
             {
-
+                timer.Start();
             }
-
             ImGui::SameLine();
 
-            //PAUSE
+            //Pause
             if (ImGui::Button("Pause"))
             {
-
+                timer.Pause();
             }
-
             ImGui::SameLine();
 
-            //STOP
+            //Stop
             if (ImGui::Button("Stop"))
             {
-
+                timer.Stop();
+                frames_time = 0;
             }
+            ImGui::SameLine();
+            ImGui::Text("Current Time: %u ", frames_time);
         }
-
         ImGui::EndMainMenuBar();
     }
 

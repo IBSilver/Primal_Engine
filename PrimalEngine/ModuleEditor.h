@@ -9,6 +9,7 @@
 #include <vector>
 #include <memory>
 #include <deque>
+#include "Timer.h"
 
 class ModuleEditor : public Module
 {
@@ -29,7 +30,10 @@ public:
     void AddFPS(const float aFPS);
     void AddMs(const float aFPS);
     float AverageValueFloatVector(const std::vector<float>& fps);
-    
+
+    //Timer
+    Uint32 frames_time;
+    Timer timer;
 
     std::string ReadFileIO(const char* file);
     void LOGToConsole(const char* text);

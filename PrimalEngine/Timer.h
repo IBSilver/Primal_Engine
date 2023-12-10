@@ -12,6 +12,7 @@ public:
 	Timer();
 
 	void Start();
+	void Pause();
 	void Stop();
 
 	Uint32 Read();
