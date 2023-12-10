@@ -1,39 +1,42 @@
-# Sheeesh Engine
+# Primal Engine v0.2
 
-Sheeesh Engine is a 3D game engine made by two students from CITM-UPC Terrassa, Xiao Costajussà Bellver & Oriol Martín Corella.
+## Description
+Primal Engine is a videogame engine for 3rd grade subject 'Game Engines' of the videogame design and development grade at UPC CITM.
 
-- Oriol's GitHub account: [Uri](https://github.com/Urii98)
-- Xiao's GitHub account: [Xiao](https://github.com/xaitta)
-- Our GitHub project: [Sheeesh Engine](https://github.com/Urii98/SheeeshEngine)
+Our Github Link: https://github.com/IvanBSupc/Primal_Engine
 
+## Team
+Iván Bermúdez Sagra: [IvanBSupc](https://github.com/IvanBSupc)
 
-## Engine Description
+Maksym Polupan: [Maksym203](https://github.com/Maksym203)
 
-### Features
+## Features
+* Model import + Drag & Drop
+* Teexture import
+* Game Object hierarchy
+* Unity-like camera controls
+* Editor tools
+* Play/Pause/Stop buttons
 
-#### Game Objects
-- Drag and drop game objects and textures in the Hierarchy.
-- Create game objects with Game Objects Menu
-- Delete game objects by pressing Delete at Inspector
-- Delete selected game object at Hierarchy by pressing Delete.
-- Move Game Objects in Hierarchy by drag and drop them.
+## How to use the engine
+### Basic camera movement
+* Hold Left Shift: Movement speed up.
+* Left/Right Arrow: Move left/right.
+* Up/Down Arrow: Zoom in/out.
+* F: Focus camera around the geometry.
 
+### Flythrough mode
+While Right Clicking:
+* Free look around.
+* A/D: Move left/right.
+* W/S: Zoom in/out.
+* Q/E: Move up/down.
 
-### Controls
+### Orbit camera
+* Left Alt + Left Clicking
 
-#### Camera
-- While Right clicking:
-	- WASD: move forward, left, backward and right
-	- QE: move up and down
-	- Look around
-- F: look at target
-- Hold Alt:
-	- Mouse Hold Left to orbit the game object selected.
-- Mouse wheel to zoom in and zoom out.
-- Holding SHIFT duplicates movement speed.
+### Mouse wheel functions
+* Pan movement (Free move in x & y) while clicking the mouse wheel button.
+* Zoom in/out with the mouse wheel
 
-### Additional funcionality
-An image of the texture is displayed in the Inspector Window.
-
-### Additional Comments
-We have managed to carry out all the assignments, the only one that we have not been able to do was the display of the vertex normals, the display of the face normals it is done.
+## Current version
