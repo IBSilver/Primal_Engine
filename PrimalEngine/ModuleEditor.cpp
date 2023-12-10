@@ -580,7 +580,7 @@ void ModuleEditor::CreateAboutWindow(bool& showAboutWindow)
     ImGui::Text("By Ivan Bermudez Sagra & Maksym Polupan");
     if (ImGui::MenuItem("Press here to check our repository"))
     {
-        ShellExecute(NULL, "open", "https://github.com/IvanBSupc/Primal-Engine", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(NULL, "open", "https://github.com/IvanBSupc/Primal_Engine", 0, 0, SW_SHOWNORMAL);
     }
 
     ImGui::Spacing();
