@@ -236,7 +236,6 @@
     <ClCompile Include="OurPrimitive.cpp" />
     <ClCompile Include="parson.c" />
     <ClCompile Include="Primitive.cpp" />
-    <ClCompile Include="test.cpp" />
     <ClCompile Include="Timer.cpp" />
     <ClCompile Include="ComponentTransform.cpp" />
   </ItemGroup>
